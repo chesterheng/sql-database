@@ -20,10 +20,30 @@
     - [Section 14: Extra Bits: Databases In A Web App (with Node.js)](#section-14-extra-bits-databases-in-a-web-app-with-nodejs)
     - [Section 15: BONUS SECTION](#section-15-bonus-section)
 
-### Section 1: Introduction
+### Section 2: History And Story Of Data
+
+#### 5. What Is a Database?
 **[⬆ back to top](#table-of-contents)**
 
-### Section 2: History And Story Of Data
+#### 6. I Didn't Learn Anything, Try Again...
+**[⬆ back to top](#table-of-contents)**
+
+#### 7. Database Management System (DBMS)
+**[⬆ back to top](#table-of-contents)**
+
+#### 8. Exercise: Building Amazon
+**[⬆ back to top](#table-of-contents)**
+
+#### 9. Exercise: Building Amazon 2
+**[⬆ back to top](#table-of-contents)**
+
+#### 10. 5 Types Of Databases
+**[⬆ back to top](#table-of-contents)**
+
+#### 11. Exercise: What Is A Database?
+**[⬆ back to top](#table-of-contents)**
+
+#### 12. Section Review
 **[⬆ back to top](#table-of-contents)**
 
 ### Section 3: Databases + SQL Fundamentals
