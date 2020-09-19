@@ -20,30 +20,101 @@
     - [Section 14: Extra Bits: Databases In A Web App (with Node.js)](#section-14-extra-bits-databases-in-a-web-app-with-nodejs)
     - [Section 15: BONUS SECTION](#section-15-bonus-section)
 
+### Section 1: Introduction
+
+- [Live SQL Zoo Study Guide](https://github.com/chesterheng/sql-zoo)
+- []()
+
+**[⬆ back to top](#table-of-contents)**
+
 ### Section 2: History And Story Of Data
 
 #### 5. What Is a Database?
+
+It's a collection of data, a method for accessing and manipulating that data.
+
+Data are collected by many sources
+
+- Drone
+- Mobile App
+- Web App
+- Videocam
+- Automobile
+
 **[⬆ back to top](#table-of-contents)**
 
 #### 6. I Didn't Learn Anything, Try Again...
+
+[Why is a database always represented with a cylinder?](https://stackoverflow.com/questions/2822650/why-is-a-database-always-represented-with-a-cylinder)
+
+![](section-01/database.jpg)
+
+Data are collected and use by different people
+
+- Product Managers: learn from data to improve the product
+- Marketers: analyse business decision
+- Web Developers
+- Data Analysts: analyse and build machine learning model
+- Data Engineer
+- Data Administrator
+
 **[⬆ back to top](#table-of-contents)**
 
 #### 7. Database Management System (DBMS)
+
+- How to put data in DB
+- How to use/update/learn from data
+- How to remove data
+
+Confusing Acronyms
+
+- DBMS: Database Management System
+- RDBMS: Relational Database Management System
+- SQL: Structured Query Language
+
+Confusing Anagrams
+
+![](section-01/anagram.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 #### 8. Exercise: Building Amazon
+
+[SQL Playground](https://www.w3schools.com/sql/trysql.asp?filename=trysql_asc)
+
 **[⬆ back to top](#table-of-contents)**
 
 #### 9. Exercise: Building Amazon 2
+
+![](section-01/build-amazon.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 #### 10. 5 Types Of Databases
+
+5 data models
+
+- Relational: support asset transactions
+- Document: data is in a document, scalability
+- Key Value: simple way to access data
+- Graph: good for connected data
+- Wide Columnar
+
 **[⬆ back to top](#table-of-contents)**
 
 #### 11. Exercise: What Is A Database?
+
+- A database is a hardware and software system that allows a user to store, organize and use data.
+- A database stores data and provides answer to query based on its data. 
+
 **[⬆ back to top](#table-of-contents)**
 
 #### 12. Section Review
+
+- Do you have useful data?
+- Install a DB to Store Data
+- Use SQL to Setup + Use Data
+
 **[⬆ back to top](#table-of-contents)**
 
 ### Section 3: Databases + SQL Fundamentals
