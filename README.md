@@ -396,6 +396,74 @@ DBMS features
 **[⬆ back to top](#table-of-contents)**
 
 ### Section 4: Environment Setup
+
+#### 38. Why PostgreSQL
+
+- [PostgreSQL](https://www.postgresql.org/)
+- [Studio for PostgreSQL](https://valentina-db.com/en/studio-for-postgresql)
+- [Valentina Studio](https://www.valentina-db.com/en/all-downloads/vstudio)
+
+[PostgreSQL is the worlds’ best database](https://www.2ndquadrant.com/en/blog/postgresql-is-the-worlds-best-database/)
+
+**[⬆ back to top](#table-of-contents)**
+
+#### 39. Environment Tooling
+
+![](section-04/postgres.jpg)
+
+**[⬆ back to top](#table-of-contents)**
+
+#### 40. SQL Tooling Alternatives
+
+our choice was based on multiple criteria
+
+- Is it cross-platform?
+- Is it easy to use?
+- Is it free?
+- Can it be extended to multiple database providers?
+
+Alternatives
+
+- [PG Admin + Command line](https://www.pgadmin.org/)
+- [Datagrip](https://www.jetbrains.com/datagrip/)
+- [DBeaver](https://dbeaver.io/)
+- [Falcon](https://github.com/plotly/falcon)
+- [DbVisualizer](https://www.dbvis.com/)
+- [TablePlus](https://tableplus.com/)
+
+**[⬆ back to top](#table-of-contents)**
+
+#### 41. Command Line 101
+
+[Command Line 101](https://medium.com/@aechagen/mac-terminal-101-13a3e8e75d4c)
+
+**[⬆ back to top](#table-of-contents)**
+
+#### 45. MAC Setup
+
+- [Removing existing PostgreSQL Installations](https://postgresapp.com/documentation/remove.html)
+- [Installing Postgres.app](https://postgresapp.com/)
+- [Dockerize PostgreSQL](https://docs.docker.com/engine/examples/postgresql_service/)
+
+![](section-04/postgres.jpg)
+
+**[⬆ back to top](#table-of-contents)**
+
+#### 46. MAC Commandline tools
+
+[CLI Tools](https://postgresapp.com/documentation/cli-tools.html)
+
+**[⬆ back to top](#table-of-contents)**
+
+#### 49. Importing Data On MAC
+
+```console
+psql -U chesterheng -d Employees < employees.sql
+psql -U chesterheng -d World < world.sql
+psql -U chesterheng -d Store < store.sql
+psql -U chesterheng -d France < france.sql
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ### Section 5: SQL Deep Dive
