@@ -4399,12 +4399,116 @@ ORDER BY "rider";
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 9: Database Design**
+
+### 185. System Design And SDLC
+**[⬆ back to top](#table-of-contents)**
+
+### 186. SDLC Phases
+**[⬆ back to top](#table-of-contents)**
+
+### 187. System Design Deep Dive
+**[⬆ back to top](#table-of-contents)**
+
+### 188. Top-Down vs Bottom-Up
+**[⬆ back to top](#table-of-contents)**
+
+### 189. DRIVEME Academy
+**[⬆ back to top](#table-of-contents)**
+
+### 190. Top Down Design
+**[⬆ back to top](#table-of-contents)**
+
+### 191. ER Model
+**[⬆ back to top](#table-of-contents)**
+
+### 192. Step 1: Determining Entities
+**[⬆ back to top](#table-of-contents)**
+
+### 193. Tooling For Diagramming
+**[⬆ back to top](#table-of-contents)**
+
+### 194. DRIVEME Academy Entities
+**[⬆ back to top](#table-of-contents)**
+
+### 195. Step 2: Attributes
+**[⬆ back to top](#table-of-contents)**
+
+### 196. Relational Model Extended
+**[⬆ back to top](#table-of-contents)**
+
+### 197. Relational Schema And Instance
+**[⬆ back to top](#table-of-contents)**
+
+### 198. Super Key and Candidate Key
+**[⬆ back to top](#table-of-contents)**
+
+### 199. Primary Key and Foreign Key
+**[⬆ back to top](#table-of-contents)**
+
+### 200. Compound Composite And Surrogate Key
+**[⬆ back to top](#table-of-contents)**
+
+### 201. DRIVEME Attributes
+**[⬆ back to top](#table-of-contents)**
+
+### 202. Step 3: Relationships
+**[⬆ back to top](#table-of-contents)**
+
+### 203. DRIVEME Relationships
+**[⬆ back to top](#table-of-contents)**
+
+### 204. Step 4: Solving Many To Many
+**[⬆ back to top](#table-of-contents)**
+
+### 205. Step 5: Subject Areas
+**[⬆ back to top](#table-of-contents)**
+
+### 206. DRIVEME Subject Areas
+**[⬆ back to top](#table-of-contents)**
+
+### 207. Exercise: Painting Reservations
+**[⬆ back to top](#table-of-contents)**
+
+### 208. Exercise: Movie Theatre
+**[⬆ back to top](#table-of-contents)**
+
+### 209. Bottom Up Design
+**[⬆ back to top](#table-of-contents)**
+
+### 210. Anomalies
+**[⬆ back to top](#table-of-contents)**
+
+### 211. Normalization
+**[⬆ back to top](#table-of-contents)**
+
+### 212. Functional Dependencies
+**[⬆ back to top](#table-of-contents)**
+
+### 213. Functional Dependencies 2
+**[⬆ back to top](#table-of-contents)**
+
+### 214. The Normal Forms
+**[⬆ back to top](#table-of-contents)**
+
+### 215. Going from 0NF to 1NF
+**[⬆ back to top](#table-of-contents)**
+
+### 216. Going from 1NF to 2NF
+**[⬆ back to top](#table-of-contents)**
+
+### 217. Going from 2NF to 3NF
+**[⬆ back to top](#table-of-contents)**
+
+### 218. Boyce-Codd Normal Form
+**[⬆ back to top](#table-of-contents)**
+
+### 219. Why 4NF And 5NF Are Not Useful
+**[⬆ back to top](#table-of-contents)**
+
+### 220. Exercise: Database Design Quiz
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 10: Database Landscape, Performance and Security**
-**[⬆ back to top](#table-of-contents)**
-
-## **Section 11: Where To Go From Here?**
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 14: Extra Bits: Databases In A Web App (with Node.js)**
