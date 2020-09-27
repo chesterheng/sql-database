@@ -577,6 +577,7 @@ DBMS features
 - [PostgreSQL](https://www.postgresql.org/)
 - [Studio for PostgreSQL](https://valentina-db.com/en/studio-for-postgresql)
 - [Valentina Studio](https://www.valentina-db.com/en/all-downloads/vstudio)
+- [PSequel](http://www.psequel.com/)
 
 [PostgreSQL is the worlds’ best database](https://www.2ndquadrant.com/en/blog/postgresql-is-the-worlds-best-database/)
 
@@ -4512,4 +4513,63 @@ ORDER BY "rider";
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 14: Extra Bits: Databases In A Web App (with Node.js)**
+
+### 265. Setting Up Your Database
+
+```sql
+CREATE TABLE users (
+  id serial PRIMARY KEY,
+  "name" VARCHAR(100),
+  email text UNIQUE NOT NULL,
+  entries BIGINT DEFAULT 0,
+  joined TIMESTAMP NOT NULL
+);
+
+CREATE TABLE login (
+  id serial PRIMARY KEY,
+  hash VARCHAR(100) NOT NULL,
+  email text UNIQUE NOT NULL
+);
+```
+
 **[⬆ back to top](#table-of-contents)**
+
+### 266. Connecting To The Database
+
+[Knex.js](http://knexjs.org/)
+
+```javascript
+const postgres = knex({
+  client: 'pg',
+  connection: {
+    host : 'localhost',
+    user : 'postgres',
+    password : '',
+    database : 'smart-brain'
+  }
+});
+
+postgres.select('*').from('users');
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### 267. Registering A User Part 1
+
+```javascript
+app.post('/register', (req, res) => {
+  const { email, name } = req.body;
+  db('users')
+    .returning('*')
+    .insert({
+      name,
+      email,
+      joined: new Date()
+  })
+  .then(user => res.json(user[0]))
+  .catch(err => res.status(400).json('unable to register'));
+});
+```
+
+**[⬆ back to top](#table-of-contents)**
+
