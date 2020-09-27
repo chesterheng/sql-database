@@ -4510,6 +4510,141 @@ ORDER BY "rider";
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 10: Database Landscape, Performance and Security**
+
+### 222. Scalability
+
+Scalability
+
+- capability of database to handle growing amount of data
+- more data to store into database
+- reach limit on how much data to store
+- more operations - lots of users query database for more information
+- how many operations per second
+
+2 strategies
+
+- vertical scalability: add more capacity to a single database, add more disk space, add more memory, add physically device, normally for relation database
+- horizontal scalability: add more database and worked as single database, normally for NoSQL such as MongoDB
+
+**[⬆ back to top](#table-of-contents)**
+
+### 223. Sharding
+
+- split data into many databases
+- for example: 3 database
+- 1st database store A to J
+- 2nd database store K to T
+- 3rd database store U to z
+- need a routing system to know data is located in which database
+- distribute query to different database
+
+**[⬆ back to top](#table-of-contents)**
+
+### 224. Replication
+
+- replicate data across mutiple machines and different locations
+- happen in real time
+- eventual consistency: user write data in one database and database updates all its replicas
+
+2 strategies
+
+- synchronous: client update a database, database updates all its replicas before response to the client
+- asynchronous: client update a database and response to the client and updates all its replicas in the background
+
+**[⬆ back to top](#table-of-contents)**
+
+### 225. Backups
+
+- not done often
+- normally at night
+- dump data into a sql file "database backup <timestamp>"
+
+**[⬆ back to top](#table-of-contents)**
+
+### 226. Distributed vs Centralized Databases
+
+- Centralized: keep in single location on a given network or control by one company, centrally control
+  - data integrity is more easy
+- Distributed: compose of multiple databadr store in multiple locations or controlled by different organizations
+  - more complexity
+
+**[⬆ back to top](#table-of-contents)**
+
+### 227. Database Security
+
+- users can only see the data they are authorized to see
+- keep unauthorized uses from access the database
+- prevent data corruption
+- database availability, no system crashes
+- create database to store necessary info and give access to necessary users
+- principle of least privilege state to give privilege to exactly what is needed
+
+**[⬆ back to top](#table-of-contents)**
+
+### 232. Relational vs NoSQL, PostgreSQL vs MongoDB Databases
+
+[Big drop in developer job postings](https://www.hntrends.com/2020/may-big-drop-developer-job-postings.html)
+
+- NoSQL (MongoDB)
+  - duplicated data
+  - no standard way to query
+  - no need to have schema
+  - easy to scale horizontally
+  - related data in one locaton
+  - data is not linked to other location
+
+- Relational (PostgreSQL)
+  - normalisation, no data duplication
+  - standard way to query
+  - need a schema
+  - hard to scale horizontally
+  - need to get related data from different tables
+  - data is linked to many locations
+
+**[⬆ back to top](#table-of-contents)**
+
+### 233. Future Of Relational Databases
+
+NewSQL
+
+- relational database and easy to scale horizontally
+
+**[⬆ back to top](#table-of-contents)**
+
+### 234. Elasticsearch
+
+- good for data need to search
+- build for full text search
+- less reliable than relational database
+- fast in search
+- relational database as primary data source
+- relational database to store important info
+- elasticsearch database as secondary data source
+- copy data to search to elasticsearch database 
+
+**[⬆ back to top](#table-of-contents)**
+
+### 235. S3 Object Storage
+
+- document model
+- use for object
+- dump data and retrieve data 
+
+**[⬆ back to top](#table-of-contents)**
+
+### 236. Top Databases To Use
+
+[Databases](https://insights.stackoverflow.com/survey/2020#technology-databases)
+
+- Postgres
+- Microsoft SQL Server
+- MongoDB 
+- Amazon DocumentDB
+- Firebase
+- Elasticsearch
+- Redis
+- Amazon S3
+
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 14: Extra Bits: Databases In A Web App (with Node.js)**
