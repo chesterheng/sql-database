@@ -4279,33 +4279,123 @@ Movr_Employees=# \i ~/Desktop/movr_employees.sql
 **[⬆ back to top](#table-of-contents)**
 
 ### 175. Clue #3
+
+You had to be on location to steal the data
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 176. Exercise: Solving The First Clues
+
+- Date of incident: 2020-06-23
+- Keiko Corp Latitude: -74.997 to -74.9968
+- Keiko Corp Longitude: 40.5 to 40.6
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 177. Solution: Solving The First Clues
+
+```sql
+CREATE VIEW suspected_rides AS
+SELECT *
+FROM "public"."vehicle_location_histories"
+WHERE 
+  "city" = 'new york' AND
+	"timestamp"::date = '2020-06-23'::date AND
+	"lat" BETWEEN -74.997 AND -74.9968 AND
+	"long" BETWEEN 40.5 AND 40.6
+ORDER BY long;
+
+SELECT DISTINCT r.vehicle_id
+FROM suspected_rides AS sr
+JOIN rides AS r ON r.id = sr.ride_id; 
+
+SELECT 
+  DISTINCT r.vehicle_id, 
+  u.name AS "owner name", 
+  u.address, 
+  v.status, 
+  v.current_location
+FROM suspected_rides AS sr
+JOIN rides AS r ON r.id = sr.ride_id
+JOIN vehicles AS v ON v.id = r.vehicle_id
+JOIN users AS u ON u.id = v.owner_id; 
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 178. Clue #4
+
+It's not the drivers
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 179. Exercise: Clue #4
+
+So with our current setup, we go ahead and filter out all of the unique riders that were on those suspected rides on that horrible day of the theft.
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 180. Solution: Clue #4
+
+```sql
+SELECT DISTINCT r.vehicle_id, u.name AS "rider name", u.address
+FROM suspected_rides AS sr
+JOIN rides AS r ON r.id = sr.ride_id
+JOIN users AS u ON u.id = r.rider_id; 
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 181. Clue #5 and #6
+
+- Clue #5: It's not a rider
+- Clue #6: It was an inside job
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 182. Exercise: Clue #5 and #6
+
+We're going to have to cross-reference data between 2 separate databases.
+
+```sql
+-- run this to run queries across databases
+CREATE extension dblink; 
+
+SELECT *
+FROM dblink(
+  'host=localhost user=postgres password=postgres dbname=Employees', 
+  'SELECT <column> FROM employees;') 
+AS t1(<column> NAME) 
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 183. Solution: Clue #5 and #6
-**[⬆ back to top](#table-of-contents)**
 
-### 184. Solving The Mystery
+- [String Functions and Operators](https://www.postgresql.org/docs/9.1/functions-string.html)
+
+```sql
+CREATE VIEW suspected_rider_names AS
+SELECT DISTINCT
+    split_part(u.name, ' ', 1) AS "first_name",
+    split_part(u.name, ' ', 2) AS "last_name"
+FROM suspected_rides AS vlh
+JOIN rides AS r ON r.id = vlh.ride_id
+JOIN users AS u ON u.id = r.rider_id; 
+
+SELECT * FROM suspected_rider_names;
+
+SELECT DISTINCT
+  CONCAT(t1.first_name, ' ', t1.last_name) AS "employee",
+  CONCAT(u.first_name, ' ', u.last_name) AS "rider"
+FROM dblink(
+  'host=localhost user=chesterheng password=postgres dbname=Movr_Employees', 
+  'SELECT first_name, last_name FROM employees;') 
+AS t1(first_name NAME, last_name NAME)
+JOIN suspected_rider_names AS u ON t1.last_name = u.last_name
+ORDER BY "rider";
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 9: Database Design**
