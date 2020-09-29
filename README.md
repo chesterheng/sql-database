@@ -7,6 +7,9 @@
   - [**Section 1: Introduction**](#section-1-introduction)
     - [4. The Big Data Breach At Keiko Corp](#4-the-big-data-breach-at-keiko-corp)
   - [**Section 2: History And Story Of Data**](#section-2-history-and-story-of-data)
+    <details>
+    <summary>Click to view all steps</summary>
+
     - [5. What Is a Database?](#5-what-is-a-database)
     - [6. I Didn't Learn Anything, Try Again...](#6-i-didnt-learn-anything-try-again)
     - [7. Database Management System (DBMS)](#7-database-management-system-dbms)
@@ -15,7 +18,11 @@
     - [10. 5 Types Of Databases](#10-5-types-of-databases)
     - [11. Exercise: What Is A Database?](#11-exercise-what-is-a-database)
     - [12. Section Review](#12-section-review)
+    </details>
   - [**Section 3: Databases + SQL Fundamentals**](#section-3-databases--sql-fundamentals)
+    <details>
+    <summary>Click to view all steps</summary>
+
     - [13.  SQL Playground](#13-sql-playground)
     - [14. Exercise: Setting Up Your First Database](#14-exercise-setting-up-your-first-database)
     - [15. What Is SQL?](#15-what-is-sql)
@@ -40,7 +47,11 @@
     - [34. OLTP vs OLAP](#34-oltp-vs-olap)
     - [35. Exercise: OLTP vs OLAP](#35-exercise-oltp-vs-olap)
     - [36. Exercise: Relational Model Quiz](#36-exercise-relational-model-quiz)
+    </details>
   - [**Section 4: Environment Setup**](#section-4-environment-setup)
+    <details>
+    <summary>Click to view all steps</summary>
+
     - [38. Why PostgreSQL](#38-why-postgresql)
     - [39. Environment Tooling](#39-environment-tooling)
     - [40. SQL Tooling Alternatives](#40-sql-tooling-alternatives)
@@ -48,7 +59,11 @@
     - [45. MAC Setup](#45-mac-setup)
     - [46. MAC Commandline tools](#46-mac-commandline-tools)
     - [49. Importing Data On MAC](#49-importing-data-on-mac)
+    </details>
   - [**Section 5: SQL Deep Dive**](#section-5-sql-deep-dive)
+    <details>
+    <summary>Click to view all steps</summary>
+
     - [52. Starting With Query](#52-starting-with-query)
     - [53. Exercise: Simple Queries](#53-exercise-simple-queries)
     - [54. Exercise: Renaming Columns](#54-exercise-renaming-columns)
@@ -99,7 +114,11 @@
     - [100. Less Common Joins](#100-less-common-joins)
     - [101. Inner-Join Exercises](#101-inner-join-exercises)
     - [102. USING Keyword](#102-using-keyword)
+    </details>
   - [**Section 6: Advanced SQL**](#section-6-advanced-sql)
+    <details>
+    <summary>Click to view all steps</summary>
+
     - [103. GROUP BY](#103-group-by)
     - [104. HAVING Keyword](#104-having-keyword)
     - [105. Ordering Grouped Data](#105-ordering-grouped-data)
@@ -133,7 +152,11 @@
     - [133. Getting The Latest Salaries](#133-getting-the-latest-salaries)
     - [134. Subquery Operators](#134-subquery-operators)
     - [135. Subquery Exercises](#135-subquery-exercises)
+    </details>
   - [**Section 7: Database Management**](#section-7-database-management)
+    <details>
+    <summary>Click to view all steps</summary>
+
     - [136. What we'll be learning](#136-what-well-be-learning)
     - [137. Time To Create Some Stuff!](#137-time-to-create-some-stuff)
     - [138. Types Of Databases In A RDBMS](#138-types-of-databases-in-a-rdbms)
@@ -171,7 +194,11 @@
     - [170. Backing Up In Postgres](#170-backing-up-in-postgres)
     - [171. Restoring A Database](#171-restoring-a-database)
     - [172. Transactions](#172-transactions)
+    </details>
   - [**Section 8: Solving The Mystery**](#section-8-solving-the-mystery)
+    <details>
+    <summary>Click to view all steps</summary>
+
     - [173. Clue #1 and #2](#173-clue-1-and-2)
     - [174. Getting ready to solve the Mystery!](#174-getting-ready-to-solve-the-mystery)
     - [175. Clue #3](#175-clue-3)
@@ -183,11 +210,68 @@
     - [181. Clue #5 and #6](#181-clue-5-and-6)
     - [182. Exercise: Clue #5 and #6](#182-exercise-clue-5-and-6)
     - [183. Solution: Clue #5 and #6](#183-solution-clue-5-and-6)
-    - [184. Solving The Mystery](#184-solving-the-mystery)
+    </details>
   - [**Section 9: Database Design**](#section-9-database-design)
+    <details>
+    <summary>Click to view all steps</summary>
+
+    - [185. System Design And SDLC](#185-system-design-and-sdlc)
+    - [186. SDLC Phases](#186-sdlc-phases)
+    - [187. System Design Deep Dive](#187-system-design-deep-dive)
+    - [188. Top-Down vs Bottom-Up](#188-top-down-vs-bottom-up)
+    - [189. DRIVEME Academy](#189-driveme-academy)
+    - [190. Top Down Design](#190-top-down-design)
+    - [191. ER Model](#191-er-model)
+    - [192. Step 1: Determining Entities](#192-step-1-determining-entities)
+    - [193. Tooling For Diagramming](#193-tooling-for-diagramming)
+    - [194. DRIVEME Academy Entities](#194-driveme-academy-entities)
+    - [195. Step 2: Attributes](#195-step-2-attributes)
+    - [196. Relational Model Extended](#196-relational-model-extended)
+    - [197. Relational Schema And Instance](#197-relational-schema-and-instance)
+    - [198. Super Key and Candidate Key](#198-super-key-and-candidate-key)
+    - [199. Primary Key and Foreign Key](#199-primary-key-and-foreign-key)
+    - [200. Compound Composite And Surrogate Key](#200-compound-composite-and-surrogate-key)
+    - [201. DRIVEME Attributes](#201-driveme-attributes)
+    - [202. Step 3: Relationships](#202-step-3-relationships)
+    - [203. DRIVEME Relationships](#203-driveme-relationships)
+    - [204. Step 4: Solving Many To Many](#204-step-4-solving-many-to-many)
+    - [205. Step 5: Subject Areas](#205-step-5-subject-areas)
+    - [206. DRIVEME Subject Areas](#206-driveme-subject-areas)
+    - [207. Exercise: Painting Reservations](#207-exercise-painting-reservations)
+    - [208. Exercise: Movie Theatre](#208-exercise-movie-theatre)
+    - [209. Bottom Up Design](#209-bottom-up-design)
+    - [210. Anomalies](#210-anomalies)
+    - [211. Normalization](#211-normalization)
+    - [212. Functional Dependencies](#212-functional-dependencies)
+    - [213. Functional Dependencies 2](#213-functional-dependencies-2)
+    - [214. The Normal Forms](#214-the-normal-forms)
+    - [215. Going from 0NF to 1NF](#215-going-from-0nf-to-1nf)
+    - [216. Going from 1NF to 2NF](#216-going-from-1nf-to-2nf)
+    - [217. Going from 2NF to 3NF](#217-going-from-2nf-to-3nf)
+    - [218. Boyce-Codd Normal Form](#218-boyce-codd-normal-form)
+    - [219. Why 4NF And 5NF Are Not Useful](#219-why-4nf-and-5nf-are-not-useful)
+    - [220. Exercise: Database Design Quiz](#220-exercise-database-design-quiz)
+    </details>
   - [**Section 10: Database Landscape, Performance and Security**](#section-10-database-landscape-performance-and-security)
-  - [**Section 11: Where To Go From Here?**](#section-11-where-to-go-from-here)
+    <details>
+    <summary>Click to view all steps</summary>
+
+    - [222. Scalability](#222-scalability)
+    - [223. Sharding](#223-sharding)
+    - [224. Replication](#224-replication)
+    - [225. Backups](#225-backups)
+    - [226. Distributed vs Centralized Databases](#226-distributed-vs-centralized-databases)
+    - [227. Database Security](#227-database-security)
+    - [232. Relational vs NoSQL, PostgreSQL vs MongoDB Databases](#232-relational-vs-nosql-postgresql-vs-mongodb-databases)
+    - [233. Future Of Relational Databases](#233-future-of-relational-databases)
+    - [234. Elasticsearch](#234-elasticsearch)
+    - [235. S3 Object Storage](#235-s3-object-storage)
+    - [236. Top Databases To Use](#236-top-databases-to-use)
+    </details>
   - [**Section 14: Extra Bits: Databases In A Web App (with Node.js)**](#section-14-extra-bits-databases-in-a-web-app-with-nodejs)
+    - [265. Setting Up Your Database](#265-setting-up-your-database)
+    - [266. Connecting To The Database](#266-connecting-to-the-database)
+    - [267. Registering A User Part 1](#267-registering-a-user-part-1)
 
 ## **Section 1: Introduction**
 
@@ -4402,111 +4486,728 @@ ORDER BY "rider";
 ## **Section 9: Database Design**
 
 ### 185. System Design And SDLC
+
+![](section-09/sdlc.jpg)
+
+Software development lifecycle
+
+- Phase 1: System planning and selection
+- Phase 2: System analysis
+- Phase 3: System design
+- Phase 4: System implementation and operation
+- Goal of SDLC is to design robust systems
+- The process can be implemented in different ways: agile, waterfall, v-model (for hardware system)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 186. SDLC Phases
+
+- different models cycle through the steps at different paces
+- Phase 1: requirements analysis
+  - get the information we needs to be done (scope)
+- Phase 2: system analysis
+  - take in requirements and analyze if it can be done on time and on budget
+- Phase 3: system design
+  - design the system architecture for all related databasesm=, apps, etc
+- Phase 4: system implementation and operation
+  - build the software
+- there are more phases that can be added: testing, maintenance, ... (inside phase 4)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 187. System Design Deep Dive
+
+- From chaos to structure: create structure that can be understood and communicated
+
+Database design
+
+- In any system, there is data
+- There are different techniques to design database
+- Top-Down vs Bottom-Up
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 188. Top-Down vs Bottom-Up
+
+Top-Down
+
+- Start from 0
+- Optimal choice when create a new database
+- All requirements are gathered up-front
+
+Bottom-Up
+
+- There is an exitsing system or specific data in place (exmaple: use by doctore)
+- Shape a new system around existing data
+- Optimal choice when migrate an exitsing database
+
+What to use? Often you'll end up using a bit of both
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 189. DRIVEME Academy
+
+- In top-down design, you create the universe based on the requirements
+- So, let'd do based on DRIVEME, an driving school 
+- Every school has instructors on payroll and an inventory of cars, truck and motorcycles for teaching
+- Initial stake holders: CEO, CTO, BA's, customers
+- Core mission: become a household name across USA for learning how to drive
+- Current situation: has an outdated website and their customer acquistion is mostly word of mouth
+- THey want to start gaining marketshare through an online presence
+- Core requirements are a well-thought out document with sections of functionality
+  - There is a vehicle inventory for students to rent
+  - Thare are employees at every branch
+  - There is maintenance for the vehicles
+  - There is an optional exam at the end of lessons
+  - You can only take the exam twice, fail twice and you must take more lessons
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 190. Top Down Design
+
+- Goal: create a data model based on requirements
+- What are requirements?
+  - high-level requirements
+  - user interviews
+  - data collection
+  - deep understanding of the business
+- one of the key method to top-down deisgn is ER modeling
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 191. ER Model
+
+Phase 3: system design
+
+- How to design?
+- Top-down: ER modeling
+- Bottom-up: ???
+
+ER Model: Entity-Relationship Model or diagram
+
+- A diagram that functions as a way to structure high-level requirments
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 192. Step 1: Determining Entities
+
+- Step 1: Determine what entities are in the system
+
+What is an entity?
+
+- a person / place or a thing
+- has a singular name
+- has an identifier
+- should contain more than one instance of data
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 193. Tooling For Diagramming
+
+- [UMLet](https://www.umlet.com/)
+- [UMLetino](http://www.umletino.com/)
+- [Lucidchart](https://www.lucidchart.com/pages/)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 194. DRIVEME Academy Entities
+
+Core requirements
+
+- There is a vehicle inventory for students to rent
+- Thare are employees at every branch
+- There is maintenance for the vehicles
+- There is an optional exam at the end of lessons
+- You can only take the exam twice, fail twice and you must take more lessons
+
+![](section-09/entities.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 195. Step 2: Attributes
+
+- give entities the information they will store
+
+Attributes
+
+- must be a property of the entity
+- must be atomic
+  - can be store in an individual field
+  - not address 
+  - address can breakdown into street name, postal code, region
+- single / mutivalued (single or many phone numbers)
+- keys
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 196. Relational Model Extended
+
+- relation schema
+- attribute
+- degree
+- cardinality
+- tuple
+- column
+- relation key
+- domain
+- tables
+- relation instance
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 197. Relational Schema And Instance
+
+![](section-09/relation-schema.jpg)
+
+Relation schema
+
+- table schema
+- represent data that is going into table
+
+![](section-09/relation-instance.jpg)
+
+Relation instance
+
+- set of data related to relation schema
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 198. Super Key and Candidate Key
+
+- [Concept of Keys in DBMS - Super, Primary, Candidate, Foreign Key, etc](https://www.youtube.com/watch?v=p3yJZH8_bsc)
+- [DBMS Keys: Candidate, Super, Primary, Foreign (Example)](https://www.guru99.com/dbms-keys.html)
+- relation key: unique identify rows and relationship
+- relation key consists of super key and candidate key
+- super key: an attribute or a set of attributes that can be used to identify row of data in a table
+- candidate key: minimal subset of super key
+- candidate key: if any proper subset of a super key is a super key, then that key cannot be a candidate key
+
+![](section-09/relation-key.jpg)
+![](section-09/super-key.jpg)
+![](section-09/candidate-key.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 199. Primary Key and Foreign Key
+
+- primary key: uniquely identify a row
+- foreign key: reference a key in foreign table
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 200. Compound Composite And Surrogate Key
+
+- compound key: multiple keys to uniquely identify a row and include foreign key
+- composite key: multiple keys to uniquely identify a row without include foreign key
+- surrogate key: use to uniquely identify a row and has no meaning to the data in the table
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 201. DRIVEME Attributes
+
+School:
+- school_id, street_name, street_nr, postal_code, state, city
+
+Instructor:
+- instructor_id, first_name, last_name, date_of_birth, hiring_date, school_id
+
+Student:
+- student_id, first_name, last_name, date_of_birth, enrollment_date, ...
+
+Exam:
+- student_id, teacher_id, date_taken, passed, lesson_id
+
+Lesson:
+- lesson_id, date_of_enrollment, package, student_id
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 202. Step 3: Relationships
+
+- determine relationships between entities
+- links 2 entities together
+  - 1 to 1
+  - 1 to many
+  - many to many
+- connect entities with a line that tells is the relationship
+
+![](section-09/crowsfeet.jpg)
+![](section-09/summary.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 203. DRIVEME Relationships
+
+![](section-09/driveme-relationships.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 204. Step 4: Solving Many To Many
+
+- in relational model it isn't possible to store a many to many relationship
+- technially you can do it, but you really don't want to
+- you create more overhead: INSERT overhead, UPDATE overhead, DELETE overhead, potential redundancy
+- as a rule of thumb always try to resolve many to many
+- solution is use intermediate entities
+
+![](section-09/many-to-many-erd.jpg)
+![](section-09/many-to-many-table.jpg)
+![](section-09/intermediate-entities.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 205. Step 5: Subject Areas
+
+- divide entities into logical groups that are related (think schemas)
+- Subject Areas rules
+  - all entities must belong to one
+  - an entity can only belong to one
+  - you can nest subject areas
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 206. DRIVEME Subject Areas
+
+![](section-09/driveme-subject-areas.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 207. Exercise: Painting Reservations
+
+System requirements
+
+- a rich business man has tons of paintings
+- he wants to build a system to catalog and track where his art is
+- he lends it to museums all across the world
+- he even wants to see reservations
+
+Some constraints to note:
+
+- a painting can only have one artist
+
+Let's answer some questions about the system:
+
+- what's the goal of the system?
+  - track painting reservations for a wealthy man
+- who are our stakeholders
+  - owner, museums
+
+5 steps of top-down to create an erd of the system
+
+Step 1: entities
+
+- Painting
+- Reservation
+- Museum
+- Artist
+
+Step 2: attributes
+
+| Entity      | Attributes                                  |
+| ----------- | ------------------------------------------- |
+| Painting    | name, creation_date, style                  |
+| Reservation | creation_date, date_from, date_to, accepted |
+| Artist      | name, birth_date, email                     |
+| Museum      | name, address, phone_nr, email              |
+
+
+Step 3: Relationships
+
+![](section-09/painting-relationships.jpg)
+
+Step 4: Solving Many To Many
+
+![](section-09/painting-many-to-many.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 208. Exercise: Movie Theatre
+
+![](section-09/cinema-1.jpg)
+![](section-09/cinema-2.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 209. Bottom Up Design
+
+- to create a data model from specific details, existing systems, legacy systems, ...
+
+Steps
+
+- identify the data (attributes)
+- group them (entities)
+
+Goal
+
+- create a perfect data model without redundancy and anomalies
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 210. Anomalies
+
+- modification anomalies are problems that arise when database is not structured correctly
+
+There are 3 types
+
+- Insert anomalies
+- Update anomalies
+- Delete anomalies
+
+![](section-09/insert-anomalies.jpg)
+![](section-09/update-anomalies.jpg)
+![](section-09/delete-anomalies.jpg)
+![](section-09/normalised.jpg)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 211. Normalization
+
+![](section-09/normalization.jpg)
+
+- use Normalization is key to avoid anomalies
+- Edgar Codd proposed the theory of normalization
+
+Goal
+
+- a design technique to reduce redundancy and anomalies
+
+Normalization
+
+- to do Normalization we must understand 2 things
+  - functional dependencies
+  - normal forms
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 212. Functional Dependencies
+
+- A functional Dependency show a relationship between attributes
+- functional Dependency exists when a relationship between 2 attributes allows you to uniquely determine corresponding attribute's value
+- we refer to an entity as R and attributes as A and B
+- A is functional dependent on B when a value of B determines a value of A: B -> A
+- it means that based on the value of B, you can determine the value of A: EMP_NO -> FIRST_NAME
+- DETERMINANT -> DEPENDANT
+- example: STUIDENT_ID -> BIRTH_DATE
+- create unique relationship between the data
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 213. Functional Dependencies 2
+
+| emp_no | proj_id | salary |
+| ------ | ------- | ------ |
+| 1      | 1       | 300    |
+| 2      | 1       | 500    |
+| 1      | 2       | 400    |
+| 3      | 2       | 300    |
+
+Example:
+
+EMP_NO -> SALARY (no)
+PROJ_ID -> SALARY (no)
+PROJ_ID, EMP_NO -> SALARY (yes)
+
+| student_no | activity     | contribution |
+| ---------- | ------------ | ------------ |
+| 1          | swimming     | 300          |
+| 2          | sailing      | 500          |
+| 3          | bungee       | 150          |
+| 4          | shark diving | 200          |
+| 1          | shark diving | 300          |
+| 2          | bungee       | 300          |
+
+Example:
+
+STUDENT_NO -> ACTIVITY (no)
+ACTIVITY -> STUDENT_NO (no)
+ACTIVITY -> CONTRIBUTION (no)
+STUDENT_NO, ACTIVITY -> CONTRIBUTION (yes)
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 214. The Normal Forms
+
+- 0 NF -> 1 NF -> 2 NF -> 3 NF -> BCNF -> 4 NF -> 5 NF -> 6 NF 
+- normalization happens through a process of running attributes through the normal forms
+- each normal form aims to further seperate relationships into smaller instances as to create less redundancy and anomalies
+- normal forms 0 through BCNF are the most common normal forms to run through
+- NF 4 and 5 are there to further reduce anomalies and 6 NF is not yet standardized
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 215. Going from 0NF to 1NF
+
+data is in 0 NF when it is unnormalized
+
+- repeating groups of fields
+- positional dependence of data
+- non-atomic data
+
+1 NF
+
+- eliminate repeating columns of the same data
+- each attribute should contain a single value
+- determine a primary key
+
+A repeating group means that a table contains 2 or more columns that are closely related
+
+Example 1:
+
+O NF
+
+| book | author 1 | author 2 | author 3 |
+| ---- | -------- | -------- | -------- |
+| 1    | 1        | 2        | 3        |
+| 2    | 2        | 1        | 3        |
+| 3    | 3        | 2        | 1        |
+
+1 NF
+
+BOOK
+
+| book_id | title |
+| ------- | ----- |
+
+BOOK_AUTHOR
+
+| book_id | author_id | author_name | author_address | author_email |
+| ------- | --------- | ----------- | -------------- | ------------ |
+
+Example 2:
+
+O NF
+
+| color                  | quantity | price |
+| ---------------------- | -------- | ----- |
+| red, green, blue       | 20       | 9.99  |
+| yellow, orange, purple | 10       | 10.99 |
+| blue, cyan             | 15       | 3.99  |
+| green, magento         | 200      | 15.99 |
+
+1 NF
+
+PRODUCT
+
+| prod_id | quantity | price |
+| ------- | -------- | ----- |
+
+PRODUCT_COLOUR
+
+| prod_id | color |
+| ------- | ----- |
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 216. Going from 1NF to 2NF
+
+- it is in 1 NF
+- all non-key attributes are fully functional dependent on the primary key
+
+Example:
+
+O NF
+
+- book
+- title
+- author
+- author_name
+- author_address
+- author_email
+
+1 NF
+
+BOOK
+
+- book_id (pk)
+- title
+
+BOOK_AUTHOR
+
+- book_id (pk)
+- author_id (pk)
+- author_name
+- author_address
+- author_email
+
+2 NF
+
+BOOK
+
+- book_id (pk)
+- title
+
+BOOK_AUTHOR
+
+- book_id (pk / fk)
+- author_id (pk / fk)
+
+AUTHOR
+
+- author_id (pk)
+- author_name
+- author_address
+- author_email
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 217. Going from 2NF to 3NF
+
+- It is in 2 NF
+- no transitive dependencies
+- A is functional dependent on B and B is functional dependent on C, C is transitively dependent on A via B
+- C -> B and B -> A means that C -> A
+
+Example:
+
+O NF
+
+- branch
+- first name
+- last name
+- title
+- hours
+
+1 NF
+
+EMPLOYEE
+
+- emp_no (pk)
+- first name
+- last name
+- title
+
+BRANCH
+
+- branch_no (pk)
+- emp_no (fk)
+- street
+- street_no
+- province
+- postal_code
+- hours_logged
+- work_date
+- country
+
+2 NF
+
+EMPLOYEE
+
+- emp_no (pk)
+- first name
+- last name
+- title
+
+BRANCH
+
+- branch_no (pk)
+- street
+- street_no
+- province
+- postal_code
+- country
+
+TIMESHEET
+
+- branch_no (pk / fk)
+- emp_no (pk / fk)
+- hours_logged
+- work_date
+
+3 NF
+
+EMPLOYEE
+
+- emp_no (pk)
+- first name
+- last name
+- title
+
+BRANCH
+
+- branch_no (pk)
+- street
+- street_no
+- postal_code
+- province_id (fk)
+
+PROVINCE
+
+- province_id (pk)
+- province
+- country
+
+TIMESHEET
+
+- branch_no (pk / fk)
+- emp_no (pk / fk)
+- hours_logged
+- work_date
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 218. Boyce-Codd Normal Form
+
+- it is in 3 NF
+- for any dependency A -> B, A should be a super key
+- most relationship in 3 NF are also in BCNF, but not all of them
+- 3 NF allows attributes to be part of a candidate key that is not the primary key - BCNF does not
+
+A relationship is not in BCNF if
+
+- the primary key is a composite key
+- there is more than one candidate key
+- some attributes have keys in common
+
+3 NF
+
+| student_id | tutor_id | tutor_sin   |
+| ---------- | -------- | ----------- |
+| 1          | 998      | 838 383 494 |
+| 2          | 234      | 343 535 352 |
+| 3          | 999      | 112 134 134 |
+| 4          | 1234     | 354 464 234 |
+
+candidate keys
+
+- STUDENT_ID, TUTOR_ID
+- STUDENT_ID, TUTOR_SIN
+
+functional dependency
+
+- TUTOR_ID -> TUTOR_SIN
+- TUTOR_SIN -> TUTOR_ID
+- STUDENT_ID, TUTOR_ID -> TUTOR_SIN 
+- STUDENT_ID, TUTOR_SIN -> TUTOR_ID 
+
+BCNF
+
+| student_id | tutor_id |
+| ---------- | -------- |
+| 1          | 998      |
+| 2          | 234      |
+| 3          | 999      |
+| 4          | 1234     |
+
+| tutor_id | tutor_sin   |
+| -------- | ----------- |
+| 999      | 838 383 494 |
+| 234      | 343 535 352 |
+| 999      | 112 134 134 |
+| 1234     | 354 464 234 |
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 219. Why 4NF And 5NF Are Not Useful
+
+- over normalization
+- incur functionality loss
+
 **[⬆ back to top](#table-of-contents)**
 
 ### 220. Exercise: Database Design Quiz
+
+[Database Design Quiz](https://www.jetpunk.com/user-quizzes/1336712/database-design-quiz)
+
 **[⬆ back to top](#table-of-contents)**
 
 ## **Section 10: Database Landscape, Performance and Security**
